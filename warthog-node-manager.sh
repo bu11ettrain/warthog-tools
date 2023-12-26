@@ -125,12 +125,12 @@ echo -ne "
 \033[0;36m
 1) Install or Update Warthog node
 2) Remove local blockchain data (.warthog) and resync Warthog node
-3) Start Warhthoge Node
-4) Stop Warhthoge Node
+3) Start Warthog Node
+4) Stop Warthog Node
 5) Show your Warthog node LOCAL and PUBLIC IP
 6) Show Warthog node output (Use CTRL+A+D to detach from the screen session)
 0) Exit menu \n\033[0m"  
-read -rp "Choose an option:"	
+read -rp "Pick an option and hit ENTER: "	
 case "$REPLY" in
 	1) shutdown; install; start; get_ip;;
 	2) shutdown; wipe; start; get_ip;;
